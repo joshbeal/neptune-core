@@ -583,7 +583,7 @@ impl RPC for NeptuneRPCServer {
     }
 
     async fn prune_abandoned_monitored_utxos(self, _context: tarpc::context::Context) -> usize {
-        let state = self.state.lock_guard().await;
+        let state = self.state.lock_guard_mut().await;
         let tip_block_header = state.chain.light_state().header();
         const DEFAULT_MUTXO_PRUNE_DEPTH: usize = 200;
 
