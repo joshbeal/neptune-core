@@ -86,4 +86,4 @@ opt-level = 0
 # rpath = false
 
 [patch.crates-io]
-tasm-lib = { git = "https://github.com/dan-da/tasm-lib.git", rev = "030c920ac728cedf80a406301f36223ccc5dfaf4" }
+tasm-lib = { git = "https://github.com/dan-da/tasm-lib.git", rev = "93eeaa1b310a51857c23c33e5f8b7a45db584b7b" }
